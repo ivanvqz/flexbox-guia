@@ -24,18 +24,25 @@ body{
 
 
 .element {
-    width: 40px;
+    width: 200px;
     height: 100px;
     line-height: 100px;
     text-align: center;
     color: #fff;
     font-size: 2rem;
-    flex-grow: 1;
-    flex-basis: 0;/* *se usa cuando no hay un elemento base*/
+    /* flex-grow: 0;*/
+    /* flex-shrink: 1; */
+    /*flex-basis: 0;*se usa cuando no hay un elemento base */
+    /* flex-basis: 0;define el tamaño base de los flex-items en el main -axis */
+    /* flex: auto; */
 }
 .element:nth-child(2n+1) {
     background-color: crimson;
 }
 .element:nth-child(2n) {
     background-color: teal;
+}
+.element-3 {
+    align-self: stretch;
+    height: auto;
 }
