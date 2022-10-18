@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>  
+    <div class="container">
+        <div class="element element-1">1</div>
+        <div class="element element-2">2</div>
+        <div class="element element-3">3</div>
+        <div class="element element-4">4</div>
+    </div>
+    <div class="container2">
+        <p><strong>Contexto de Flexbox</strong>: Se compone básicamente de un contenedor padre, y sus hijos. Los cuales se denominan flex-items.</p>
+        <p><strong>main axis: </strong>fila. <br> Los elementos siempre se ponen por defecto en esta posición.</p>
+        <p><strong>cross-axis</strong> columna</p>
+        <p>El eje principal, axis, se encuentra predefinido con <code>flex-direction: row;</code></p>
+
+        <p><strong>Flex-wrap</strong>: define el comportamiento de los items cuando su tamal sumado rebasen el tamaño del main axis. Cuando se establece este valor, cuando no quepan en el main axis, se crea una nueva línea. Además, si se pone un valor reverso, ya sea en row o column, este se irá al final del cross-axis</p>
+
+        <p><strong>Flex-flow</strong>: es el shorthand de flex-direction y wrap:
+            <code>flex-flow: column nowrap;</code>
+        </p>
+
+        <p><a href="./html/alineacion-cross-axis.html">Alineando el Cross-axis</a></p>
+        <p><a href="./html/alineacion-main-axis.html">Alineando el main-axis</a></p>
+        <p><a href="./html/elementos-flex-items.html">Propiedades de los flex-items</a></p>
+    </div>
+</body>
+</html>
